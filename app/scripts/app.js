@@ -1,11 +1,25 @@
-angular.module('comission', [])
-	.config(comissionRouter);
-
-function comissionRouter ($routeProvider) {
-	$routeProvider
-		.when('/', {templateUrl: 'partials/information.html'})
-		.when('/search', {templateUrl: 'partials/search.html'})
-		.when('/adding', {templateUrl: 'partials/adding.html'})
-		.when('/express', {templateUrl: 'partials/express.html'})
-		.when('/contacts', {templateUrl: 'partials/contacts.html'});
-}
+/**
+ * @ngdoc overview
+ * @name app
+ * @description
+ * # app
+ *
+ * Main module of the application.
+ */
+(function() {
+    'use strict';
+    angular
+      .module('app', [
+        'ngAnimate',
+        'ngResource',
+        'ngSanitize',
+        'ngTouch',
+        'ngStorage',
+        'ngStore',
+        'ui.router',
+        'ui.utils',
+        'ui.load',
+        'ui.jp',
+        'oc.lazyLoad'
+      ]);
+})();
