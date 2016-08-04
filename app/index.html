@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html ng-app="comission">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link media="screen" rel="stylesheet" href="media/sheet.css">			
+<link media="screen" rel="stylesheet" href="media/smoke.css" />			
+<script type="text/javascript" src="scripts/library/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="scripts/app/funny.js"></script>
+<title>Приёмная on-line</title>
+</head>
+<body>
+<div id="wrapper">
+<div id="menu">    <!--Navigation-->
+				<input type="checkbox" id="respective" name="menu">
+				<a><label id="label" class="symbol" for="respective" onclick></label></a></input>
+	    <ul class="left" >
+                <li class="responsive" ng-class="homeActive"><a href="index.html">HOME</a></li>
+                <li class="responsive" ng-class="searchActive"><a href="search.html">Комиссия</a></li>
+                <li class="responsive" ng-class="contactActive"><a href="contact.html">Контакт</a></li>
+            <li id="settings" class="responsive"><a class="help-me" onclick="down-list();" href="#">Темы</a>
+ 				<ul class="themes">
+				<li><a>Дымок<input class="theme" value="smoke" type="radio" name="themes" checked/></a></li>
+				<li><a>Малина <input class="theme" value="malline" type="radio" name="themes"/></a></li>
+				<li><a>Колибри <input class="theme" value="gr.blue" type="radio" name="themes"/></a></li>
+				<li><a>Маникен <input class="theme" value="dr.blue" type="radio" name="themes"/></a></li>
+				<li><a>Гроза <input class="theme" value="smoke" type="radio" name="themes"/></a></li>
+				</ul>			
+			</li>
+			<li id="mobile">
+				<ul>
+				<li><a href="/#/">Информация</a></li>
+				<li><a href="/#/entrants">Управление</a></li>
+				<li><a href="/#/search">Комиссия</a></li>
+				<li><a href="#">Настройки</a></li>
+				<li><a href="#">Контакт</a></li>
+				<li><a href="#">Выход</a></li>
+				</ul>
+			</li>
+       </ul>
+</div>
+<div id="content"><!--Контент-->
+<br />
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <th style="text-align:left">Документы:</th>
+                <th>Скачать</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Правила приёма в ВУЗ</td>
+                <td><center><a href="Content/documents/prav.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Расписание проведения единого государственного экзамена  в 2014 году</td>
+                <td><center><a href="Content/documents/ege.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Минимальные баллы ЕГЭ 2014</td>
+                <td><center><a href="Content/documents/minval.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Направления по приёму абитуриентов на базе 9 классов</td>
+                <td><center><a href="Content/documents/class9.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Направления по приёму абитуриентов на базе 11 классов</td>
+                <td><center><a href="Content/documents/class11.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Приём заявлений и необходимых документов в электронно-цифровой форме</td>
+                <td><center><a href="Content/documents/electro.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+            <tr>
+                <td>Заочное отделение</td>
+                <td><center><a href="Content/documents/ozo.doc" title="Скачать">
+                    <img src="images/scrap.png" /></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+                </div>
+            </div>
+        <br class="clearfix" />
+        <div id="footer">Комиссия © 2014</div>    
+</body>
+</html>
+
+</body>
+</html>
