@@ -17,19 +17,19 @@
       function MainCtrl($scope) {
         var vm = $scope;
         vm.folds = [
-          {name: 'Inbox', filter:''},
-          {name: 'Starred', filter:'starred'},
-          {name: 'Sent', filter:'sent'},
-          {name: 'Important', filter:'important'},
-          {name: 'Draft', filter:'draft'},
-          {name: 'Trash', filter:'trash'}
+          {name: 'Входящии', filter:''},
+          {name: 'Избранное', filter:'starred'},
+          {name: 'Отправленые', filter:'sent'},
+          {name: 'Важное', filter:'important'},
+          {name: 'Черновик', filter:'draft'},
+          {name: 'Корзина', filter:'trash'}
         ];
 
         vm.labels = [
-          {name: 'Angular', filter:'angular', color:'#23b7e5'},
-          {name: 'Bootstrap', filter:'bootstrap', color:'#7266ba'},
-          {name: 'Client', filter:'client', color:'#fad733'},
-          {name: 'Work', filter:'work', color:'#27c24c'}
+          {name: 'Прочитано', filter:'angular', color:'#23b7e5'},
+          {name: 'Спам', filter:'bootstrap', color:'#7266ba'},
+          {name: 'Новое', filter:'client', color:'#fad733'},
+          {name: 'Израное', filter:'work', color:'#27c24c'}
         ];
 
         vm.labelClass = labelClass;
@@ -84,10 +84,10 @@
         var vm = $scope;
         vm.item = inboxStorage.find($stateParams);
         vm.labels = [
-          {name: 'Angular', filter:'angular', color:'#23b7e5'},
-          {name: 'Bootstrap', filter:'bootstrap', color:'#7266ba'},
-          {name: 'Client', filter:'client', color:'#fad733'},
-          {name: 'Work', filter:'work', color:'#27c24c'}
+          {name: 'Прочитано', filter:'angular', color:'#23b7e5'},
+          {name: 'Спам', filter:'bootstrap', color:'#7266ba'},
+          {name: 'Новое', filter:'client', color:'#fad733'},
+          {name: 'Избраное', filter:'work', color:'#27c24c'}
         ];
         vm.removeItem = removeItem;
         vm.updateItem = updateItem;

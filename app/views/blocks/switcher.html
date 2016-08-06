@@ -1,9 +1,9 @@
-<div class="switcher box-color dark-white text-color" id="sw-theme">
+<div class="switcher box-color dark-white text-color" id="sw-theme" style="display:none">
   <a href ui-toggle-class="active" target="#sw-theme" class="box-color dark-white text-color sw-btn">
     <i class="fa fa-gear"></i>
   </a>
   <div class="box-header">
-    <h2>Theme Switcher</h2>
+    <h2>Менеджер темы</h2>
   </div>
   <div class="box-divider"></div>
   <div class="box-body">
@@ -11,12 +11,12 @@
       <label class="md-check m-y-xs">
         <input type="checkbox" ng-model="app.setting.folded">
         <i class="green"></i>
-        <span class="hidden-folded">Folded Aside</span>
+        <span class="hidden-folded">Прижатое боковое меню</span>
       </label>
       <label class="md-check m-y-xs">
         <input type="checkbox" ng-model="app.setting.boxed">
         <i class="green"></i>
-        <span class="hidden-folded">Boxed Layout</span>
+        <span class="hidden-folded">Коробочный вариант</span>
       </label>
     </p>
     <p>Colors:</p>
@@ -64,7 +64,7 @@
   </div>
 </div>
 
-<div class="switcher box-color black lt" id="sw-demo">
+<div class="switcher box-color black lt" id="sw-demo" style="display:none">
   <a href ui-toggle-class="active" target="#sw-demo" class="box-color black lt text-color sw-btn">
     <i class="fa fa-list text-white"></i>
   </a>

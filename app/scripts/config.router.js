@@ -27,11 +27,11 @@
             dashboard = '../views/dashboard/dashboard.'+l+'html';
 
         $urlRouterProvider
-          .otherwise('/app/dashboard');
+          .otherwise('/controller.asp/');
         $stateProvider
           .state('app', {
             abstract: true,
-            url: '/app',
+            url: '/controller.asp',
             views: {
               '': {
                 templateUrl: layout
@@ -39,9 +39,9 @@
             }
           })
             .state('app.dashboard', {
-              url: '/dashboard',
+              url: '/',
               templateUrl: dashboard,
-              data : { title: 'Dashboard' },
+              data : { title: 'Администрирование' },
               controller: "ChartCtrl",
               resolve: load(['scripts/controllers/chart.js'])
             })
@@ -51,7 +51,7 @@
             .state('app.contact', {
               url: '/contact',
               templateUrl: 'apps/contact/main.html',
-              data : { title: 'Contacts', hideFooter: true },
+              data : { title: 'Контакты', hideFooter: true },
               controller: 'ContactCtrl',
               resolve: load('apps/contact/contact.js')
             })
@@ -59,7 +59,7 @@
             .state('app.calendar', {
               url: '/calendar',
               templateUrl: 'apps/calendar/main.html',
-              data : { title: 'Calendar' },
+              data : { title: 'Календарь' },
               controller: 'FullcalendarCtrl',
               resolve: load(['moment','fullcalendar','ui.calendar','apps/calendar/calendar.js'])
             })
@@ -67,7 +67,7 @@
             .state('app.todo', {
               url: '/todo',
               templateUrl: 'apps/todo/todo.html',
-              data : { title: 'Todo' },
+              data : { title: 'Выполнить' },
               controller: 'TodoCtrl',
               resolve: load('apps/todo/todo.js')
             })
@@ -83,7 +83,7 @@
             .state('app.note.list', {
               url: '/list',
               templateUrl: 'apps/note/list.html',
-              data : { title: 'Note'},
+              data : { title: 'Заметки'},
               controller: 'NoteCtrl',
               resolve: load(['apps/note/note.js', 'moment'])
             })
@@ -96,7 +96,7 @@
                   resolve: load(['apps/note/note.js', 'moment'])
                 }
               },
-              data : { title: 'Note' }
+              data : { title: 'Заметка' }
             })
 
             // ui router
@@ -107,17 +107,17 @@
               .state('app.layout.header', {
                 url: '/header',
                 templateUrl: '../views/ui/headers.html',
-                data : { title: 'Headers' }
+                data : { title: 'Верхушки' }
               })
               .state('app.layout.aside', {
                 url: '/aside',
                 templateUrl: '../views/ui/asides.html',
-                data : { title: 'Asides' }
+                data : { title: 'Боковое' }
               })
               .state('app.layout.footer', {
                 url: '/footer',
                 templateUrl: '../views/ui/footers.html',
-                data : { title: 'Footers' }
+                data : { title: 'Низинки' }
               })
 
             .state('app.inbox', {
@@ -148,7 +148,7 @@
             .state('app.widget', {
               url: '/widget',
               templateUrl: '../views/ui/widget.html',
-              data : { title: 'Widgets' }
+              data : { title: 'Гаджеты' }
             })
 
             // ui router
@@ -159,82 +159,82 @@
               .state('app.ui.arrow', {
                 url: '/arrow',
                 templateUrl: '../views/ui/arrow.html',
-                data : { title: 'Arrows' }
+                data : { title: 'Стрелки' }
               })
               .state('app.ui.box', {
                 url: '/box',
                 templateUrl: '../views/ui/box.html',
-                data : { title: 'Box' }
+                data : { title: 'Каркасы' }
               })
               .state('app.ui.label', {
                 url: '/label',
                 templateUrl: '../views/ui/label.html',
-                data : { title: 'Labels' }
+                data : { title: 'Метки' }
               })
               .state('app.ui.button', {
                 url: '/button',
                 templateUrl: '../views/ui/button.html',
-                data : { title: 'Buttons' }
+                data : { title: 'Кнопки' }
               })
               .state('app.ui.color', {
                 url: '/color',
                 templateUrl: '../views/ui/color.html',
-                data : { title: 'Colors' }
+                data : { title: 'Цвета' }
               })
               .state('app.ui.dropdown', {
                 url: '/dropdown',
                 templateUrl: '../views/ui/dropdown.html',
-                data : { title: 'Dropdowns' }
+                data : { title: 'Выпадающие' }
               })
               .state('app.ui.grid', {
                 url: '/grid',
                 templateUrl: '../views/ui/grid.html',
-                data : { title: 'Grids' }
+                data : { title: 'Сетки' }
               })
               .state('app.ui.icon', {
                 url: '/icons',
                 templateUrl: '../views/ui/icon.html',
-                data : { title: 'Icons' }
+                data : { title: 'Иконки' }
               })
               .state('app.ui.list', {
                 url: '/list',
                 templateUrl: '../views/ui/list.html',
-                data : { title: 'Lists' }
+                data : { title: 'Списки' }
               })
               .state('app.ui.modal', {
                 url: '/modal',
                 templateUrl: '../views/ui/modal.html',
-                data : { title: 'Modals' }
+                data : { title: 'Модальные' }
               })
               .state('app.ui.nav', {
                 url: '/nav',
                 templateUrl: '../views/ui/nav.html',
-                data : { title: 'Navs' }
+                data : { title: 'Навигации' }
               })
               .state('app.ui.progress', {
                 url: '/progress',
                 templateUrl: '../views/ui/progress.html',
-                data : { title: 'Progress' }
+                data : { title: 'Прогресс' }
               })
               .state('app.ui.social', {
                 url: '/social',
                 templateUrl: '../views/ui/social.html',
-                data : { title: 'Social' }
+                data : { title: 'Социальные' }
               })
               .state('app.ui.sortable', {
                 url: '/sortable',
                 templateUrl: '../views/ui/sortable.html',
-                data : { title: 'Sortable' }
+                data : { title: 'Сортируемый' }
               })
               .state('app.ui.streamline', {
                 url: '/streamline',
                 templateUrl: '../views/ui/streamline.html',
-                data : { title: 'Streamlines' }
+                data : { title: 'Событийные' }
               })
               .state('app.ui.timeline', {
                 url: '/timeline',
                 templateUrl: '../views/ui/timeline.html',
-                data : { title: 'Timelines' }
+                data : { title: 'Временные' }
               })
               .state('app.ui.angularstrap', {
                 url: '/angularstrap',
@@ -431,17 +431,17 @@
             .state('app.page.profile', {
               url: '/profile',
               templateUrl: '../views/page/profile.html',
-              data : { title: 'Profile' }
+              data : { title: 'Профиль' }
             })
             .state('app.page.setting', {
               url: '/setting',
               templateUrl: '../views/page/setting.html',
-              data : { title: 'Setting' }
+              data : { title: 'Конфигурирование' }
             })
             .state('app.page.search', {
               url: '/search',
               templateUrl: '../views/page/search.html',
-              data : { title: 'Search' }
+              data : { title: 'Поиск' }
             })
             .state('app.page.faq', {
               url: '/faq',
@@ -451,27 +451,27 @@
             .state('app.page.gallery', {
               url: '/gallery',
               templateUrl: '../views/page/gallery.html',
-              data : { title: 'Gallery' }
+              data : { title: 'Галерея' }
             })
             .state('app.page.invoice', {
               url: '/invoice',
               templateUrl: '../views/page/invoice.html',
-              data : { title: 'Invoice' }
+              data : { title: 'Квитанция' }
             })
             .state('app.page.price', {
               url: '/price',
               templateUrl: '../views/page/price.html',
-              data : { title: 'Price' }
+              data : { title: 'Ценники' }
             })
             .state('app.page.blank', {
               url: '/blank',
               templateUrl: '../views/page/blank.html',
-              data : { title: 'Blank' }
+              data : { title: 'Пустая страница' }
             })
             .state('app.docs', {
               url: '/docs',
               templateUrl: '../views/page/docs.html',
-              data : { title: 'Documents' }
+              data : { title: 'Документы' }
             })
             .state('404', {
               url: '/404',

@@ -1,7 +1,7 @@
 
   <ul class="nav" ui-nav>
     <li class="nav-header hidden-folded">
-      <small class="text-muted">Main</small>
+      <small class="text-muted">Личный кабинет</small>
     </li>
     
     <li ui-sref-active="active">
@@ -9,7 +9,7 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe3fc;<span ui-include="'../assets/images/i_0.svg'"></span></i>
         </span>
-        <span class="nav-text">Dashboard</span>
+        <span class="nav-text">Сметы</span>
       </a>
     </li>
 
@@ -22,23 +22,23 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe5c3;<span ui-include="'../assets/images/i_1.svg'"></span></i>
         </span>
-        <span class="nav-text">Apps</span>
+        <span class="nav-text">Прилож.</span>
       </a>
       <ul class="nav-sub">
         <li ui-sref-active="active">
-          <a href="inbox.html" ui-sref="app.inbox.list"><span class="nav-text">Inbox</span></a>
+          <a href="inbox.html" ui-sref="app.inbox.list"><span class="nav-text">Почта</span></a>
         </li>
         <li ui-sref-active="active">
-          <a href="contact.html" ui-sref="app.contact"><span class="nav-text">Contacts</span></a>
+          <a href="contact.html" ui-sref="app.contact"><span class="nav-text">Контакты</span></a>
         </li>
         <li ui-sref-active="active">
-          <a href="calendar.html" ui-sref="app.calendar"><span class="nav-text">Calendar</span></a>
+          <a href="calendar.html" ui-sref="app.calendar"><span class="nav-text">Календарь</span></a>
         </li>
         <li ui-sref-active="active" class="hide" ng-class="{'show': 1}">
-          <a ui-sref="app.note.list"><span class="nav-text">Note</span></a>
+          <a ui-sref="app.note.list"><span class="nav-text">Заметки</span></a>
         </li>
         <li ui-sref-active="active" class="hide" ng-class="{'show': 1}">
-          <a ui-sref="app.todo"><span class="nav-text">Todo</span></a>
+          <a ui-sref="app.todo"><span class="nav-text">Задания</span></a>
         </li>
       </ul>
     </li>
@@ -51,17 +51,17 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe8f0;<span ui-include="'../assets/images/i_2.svg'"></span></i>
         </span>
-        <span class="nav-text">Layouts</span>
+        <span class="nav-text">Макеты</span>
       </a>
       <ul class="nav-sub">
         <li ui-sref-active="active">
-          <a href="headers.html" ui-sref="app.layout.header"><span class="nav-text">Header</span></a>
+          <a href="headers.html" ui-sref="app.layout.header"><span class="nav-text">Верхушка</span></a>
         </li>
         <li ui-sref-active="active">
-          <a href="asides.html" ui-sref="app.layout.aside"><span class="nav-text">Aside</span></a>
+          <a href="asides.html" ui-sref="app.layout.aside"><span class="nav-text">Боковая</span></a>
         </li>
         <li ui-sref-active="active">
-          <a href="footers.html" ui-sref="app.layout.footer"><span class="nav-text">Footer</span></a>
+          <a href="footers.html" ui-sref="app.layout.footer"><span class="nav-text">Низинка</span></a>
         </li>
       </ul>
     </li>
@@ -71,12 +71,12 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe8d2;<span ui-include="'../assets/images/i_3.svg'"></span></i>
         </span>
-        <span class="nav-text">Widgets</span>
+        <span class="nav-text">Гаджеты</span>
       </a>
     </li>
 
     <li class="nav-header hidden-folded">
-      <small class="text-muted">Components</small>
+      <small class="text-muted">Компоненты</small>
     </li>
 
     <li ng-class="{active:$state.includes('app.ui')}">
@@ -88,7 +88,7 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe429;<span ui-include="'../assets/images/i_4.svg'"></span></i>
         </span>
-        <span class="nav-text">UI kit</span>
+        <span class="nav-text">Основные</span>
       </a>
       <ul class="nav-sub nav-mega nav-mega-3">
         <li ui-sref-active="active" class="hide" ng-class="{'show': 1}">
@@ -163,22 +163,22 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe3e8;<span ui-include="'../assets/images/i_5.svg'"></span></i>
         </span>
-        <span class="nav-text">Pages</span>
+        <span class="nav-text">Страницы</span>
       </a>
       <ul class="nav-sub nav-mega">
         <li ui-sref-active="active">
           <a href="profile.html" ui-sref="app.page.profile">
-            <span class="nav-text">Profile</span>
+            <span class="nav-text">Профиль</span>
           </a>
         </li>
         <li ui-sref-active="active">
           <a href="setting.html" ui-sref="app.page.setting">
-            <span class="nav-text">Setting</span>
+            <span class="nav-text">Настройки</span>
           </a>
         </li>
         <li ui-sref-active="active">
           <a href="search.html" ui-sref="app.page.search">
-            <span class="nav-text">Search</span>
+            <span class="nav-text">Поисковая</span>
           </a>
         </li>
         <li ui-sref-active="active">
@@ -193,47 +193,47 @@
         </li>
         <li ui-sref-active="active">
           <a href="invoice.html" ui-sref="app.page.invoice">
-            <span class="nav-text">Invoice</span>
+            <span class="nav-text">Квитанция</span>
           </a>
         </li>
         <li ui-sref-active="active">
           <a href="price.html" ui-sref="app.page.price">
-            <span class="nav-text">Price</span>
+            <span class="nav-text">Продажники</span>
           </a>
         </li>
         <li ui-sref-active="active">
           <a href="blank.html" ui-sref="app.page.blank">
-            <span class="nav-text">Blank</span>
+            <span class="nav-text">Пустая</span>
           </a>
         </li>
         <li>
           <a href="signin.html" ui-sref="access.signin">
-            <span class="nav-text">Sign In</span>
+            <span class="nav-text">Логирование</span>
           </a>
         </li>
         <li>
           <a href="signup.html" ui-sref="access.signup">
-            <span class="nav-text">Sign Up</span>
+            <span class="nav-text">Регистрация</span>
           </a>
         </li>
         <li>
           <a href="forgot-password.html" ui-sref="access.forgot-password">
-            <span class="nav-text">Forgot Password</span>
+            <span class="nav-text">Восстановление</span>
           </a>
         </li>
         <li>
           <a href="lockme.html" ui-sref="access.lockme">
-            <span class="nav-text">Lockme Screen</span>
+            <span class="nav-text">Блокировкв</span>
           </a>
         </li>
         <li>
           <a href="404.html" ui-sref="404">
-            <span class="nav-text">Error 404</span>
+            <span class="nav-text">Ошибка 404</span>
           </a>
         </li>
         <li>
           <a href="505.html" ui-sref="505">
-            <span class="nav-text">Error 505</span>
+            <span class="nav-text">Ошибка 505</span>
           </a>
         </li>
       </ul>
@@ -247,7 +247,7 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe39e;<span ui-include="'../assets/images/i_6.svg'"></span></i>
         </span>
-        <span class="nav-text">Form</span>
+        <span class="nav-text">Формы</span>
       </a>
       <ul class="nav-sub">
         <li ui-sref-active="active">
@@ -297,7 +297,7 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe896;<span ui-include="'../assets/images/i_7.svg'"></span></i>
         </span>
-        <span class="nav-text">Tables</span>
+        <span class="nav-text">Таблицы</span>
       </a>
       <ul class="nav-sub">
         <li ui-sref-active="active">
@@ -329,7 +329,7 @@
         <span class="nav-icon">
           <i class="material-icons">&#xe1b8;<span ui-include="'../assets/images/i_8.svg'"></span></i>
         </span>
-        <span class="nav-text">Charts</span>
+        <span class="nav-text">Графики</span>
       </a>
       <ul class="nav-sub">
         <li ui-sref-active="active">
@@ -384,12 +384,12 @@
     </li>
 
     <li class="nav-header hidden-folded">
-      <small class="text-muted">Help</small>
+      <small class="text-muted">Помощь</small>
     </li>
     
     <li class="hidden-folded" ui-sref-active="active">
       <a href="docs.html" ui-sref="app.docs">
-        <span class="nav-text">Documents</span>
+        <span class="nav-text">Документации</span>
       </a>
     </li>
 

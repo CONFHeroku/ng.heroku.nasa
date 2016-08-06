@@ -23,7 +23,7 @@
   </div>
   <div class="p-y">
     <img ng-src="{{item.avatar}}" class="img-circle w-32 m-r-sm">
-    from <a href>{{item.from}}</a> <span class="text-xs">on {{item.date}}</span>
+    Откуда <a href>{{item.from}}</a> <span class="text-xs">on {{item.date}}</span>
   </div>
   <div class="p-y">
     {{item.content}}
@@ -40,7 +40,7 @@
     <div class="box">
       <div class="box-header ng-show" ng-hide="reply">
         <div class="m-b-lg">
-        Click here to <a href class="text-u-l" ng-click="reply=!reply">Reply</a> or <a href class="text-u-l" ng-click="reply=!reply">Forward</a>
+        Нажмите <a href class="text-u-l" ng-click="reply=!reply">, что бы повторить</a> или <a href class="text-u-l" ng-click="reply=!reply">переслать</a>
         </div>
       </div>
       <div class="ng-hide" ng-show="reply">
@@ -50,7 +50,7 @@
         <div class="box-body" contenteditable="true" style="min-height:100px"></div>
         <div class="box-footer">
           <button class="btn white pull-right" ng-click="reply=!reply"><i class="fa fa-trash-o"></i></button>
-          <button class="btn info w-xs">Send</button>
+          <button class="btn info w-xs">Отправить</button>
         </div>
       </div>
     </div>

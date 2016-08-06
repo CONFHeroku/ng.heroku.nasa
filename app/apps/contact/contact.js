@@ -38,11 +38,11 @@
 
           vm.filter = '';
           vm.groups = [
-            {name: 'Coworkers'}, 
-            {name: 'Family'}, 
-            {name: 'Friends'}, 
-            {name: 'Partners'}, 
-            {name: 'Group'}
+            {name: 'Бакалавриат'}, 
+            {name: 'Преподователи'}, 
+            {name: 'Магистратура'}, 
+            {name: 'Доктарнатура'}, 
+            {name: 'Аспирантура'}
           ];
 
           vm.createGroup = createGroup;
